@@ -1,0 +1,6 @@
+;labels
+al $0810 .PROGRAM_START
+al $0812 .looooooooooooop
+al $081C .ANT_DATA
+;breakpoints
+

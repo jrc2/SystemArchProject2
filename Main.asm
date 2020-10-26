@@ -12,6 +12,16 @@
 PROGRAM_START
 ; start your code here        
 
+        LDX #64
+
+looooooooooooop
+        LDA ANT_DATA,X
+        STA $2E80,X
+        DEX
+        BNE looooooooooooop
+
+        
+
 ; do not write code past this line
 ; the following rts instruction is required to exit the program
         rts
