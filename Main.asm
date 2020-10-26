@@ -20,6 +20,9 @@ looooooooooooop
         DEX
         BNE looooooooooooop
 
+        LDA #2E80/64
+        STA $07F8
+
         
 
 ; do not write code past this line
