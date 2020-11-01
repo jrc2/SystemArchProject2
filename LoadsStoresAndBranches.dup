@@ -1,6 +1,6 @@
 ;labels
 al $0810 .PROGRAM_START
-al $0812 .looooooooooooop
+al $0812 .loop_sprite_data
 al $0821 .ANT_DATA
 ;breakpoints
 

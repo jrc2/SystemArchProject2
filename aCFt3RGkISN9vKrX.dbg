@@ -9,7 +9,7 @@
             <LabelValue>2064</LabelValue>
         </Label>
         <Label>
-            <LabelText>looooooooooooop</LabelText>
+            <LabelText>loop_sprite_data</LabelText>
             <LabelValue>2066</LabelValue>
         </Label>
         <Label>
@@ -21,5 +21,5 @@
     <WatchList />
     <Breakpoints />
     <LONGAITransitions />
-    <Binary>DggKAJ4gKDIwNjQpAAAAokC9IQidgC7K0PepsY34B2AAAAAAAAAAAAAAAAEAAGEAABEAAA4AAB8AAB8PH7UQoH8vz99f379f37q/36m/v8T6H6CSEpAhJIghJEghJEQA</Binary>
+    <Binary>DggKAJ4gKDIwNjQpAAAAokC9IQidgC7K0Pepuo34B2AAAAAAAAAAAAAAAAEAAGEAABEAAA4AAB8AAB8PH7UQoH8vz99f379f37q/36m/v8T6H6CSEpAhJIghJEghJEQA</Binary>
 </DebugInfo>

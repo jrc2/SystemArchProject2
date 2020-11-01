@@ -12,16 +12,21 @@
 PROGRAM_START
 ; start your code here        
 
+; Copies sprite data
         LDX #64
 
-looooooooooooop
+loop_sprite_data
         LDA ANT_DATA,X
         STA $2E80,X
         DEX
-        BNE looooooooooooop
+        BNE loop_sprite_data
 
-        LDA #2E80/64
+; Sets the sprite pointer for sprite 0
+        LDA #$2E80/64
         STA $07F8
+
+
+
 
         
 
