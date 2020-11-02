@@ -21,14 +21,50 @@ loop_sprite_data
         DEX
         BNE loop_sprite_data
 
+
 ; Sets the sprite pointer for sprite 0
         LDA #$2E80/64
         STA $07F8
 
 
+; Sets ants colors
+        LDX #7
+
+loop_set_ants_color
+        LDA #$00
+        STA $D027,X
+        DEX
+        BNE loop_set_ants_color
 
 
+; Sets ants x locations
+        LDX #15
+        LDA #100
         
+loop_set_ants_x_location
+        STA $D000,X ; x coordinate
+        DEX
+        DEX
+        BNE loop_set_ants_x_location
+
+
+; Sets ants y locations
+        
+        
+
+; Sets the first sprite's color
+        ;LDA #$00 ; loads black
+        ;STA $D027 ; sets the first sprite's color to the above color
+
+; Sets the first sprite's location
+        ;LDA #100
+        ;STA $D000 ; x coord
+        ;STA $D001 ; y coord
+
+
+        LDA #1
+        STA $D015
+
 
 ; do not write code past this line
 ; the following rts instruction is required to exit the program
