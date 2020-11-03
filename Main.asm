@@ -13,57 +13,75 @@ PROGRAM_START
 ; start your code here        
 
 ; Copies sprite data
-        LDX #64
+        LDX #63
 
 loop_sprite_data
         LDA ANT_DATA,X
         STA $2E80,X
         DEX
-        BNE loop_sprite_data
+        BPL loop_sprite_data
 
 
-; Sets the sprite pointer for sprite 0
+; Sets the sprite pointers
         LDA #$2E80/64
-        STA $07F8
-
+        LDX #7
+loop_set_sprite_pointers
+        STA $07F8,X
+        DEX
+        BPL loop_set_sprite_pointers
+        
 
 ; Sets ants colors
         LDX #7
-
-loop_set_ants_color
-        LDA #$00
+        LDY #$09
+loop_set_sprite_colors
+        TYA
         STA $D027,X
         DEX
-        BNE loop_set_ants_color
+        DEY
+        BPL loop_set_sprite_colors
 
 
-; Sets ants x locations
-        LDX #15
+; Sets the sprites' x locations
+        LDX #14
         LDA #100
         
-loop_set_ants_x_location
-        STA $D000,X ; x coordinate
+loop_set_sprite_x_locations
+        STA $D000,X
         DEX
         DEX
-        BNE loop_set_ants_x_location
+        BPL loop_set_sprite_x_locations
 
 
-; Sets ants y locations
-        
-        
 
-; Sets the first sprite's color
-        ;LDA #$00 ; loads black
-        ;STA $D027 ; sets the first sprite's color to the above color
+; Sets the sprites' y locations
+        LDA #60
+        STA $D001 ; y coord 1st sprite
+        LDA #80
+        STA $D003 ; y coord 2nd sprite
+        LDA #100
+        STA $D005 ; y coord 3rd sprite
+        LDA #120
+        STA $D007 ; y coord 4th sprite
+        LDA #140
+        STA $D009 ; y coord 5th sprite
+        LDA #160
+        STA $D00B ; y coord 6th sprite
+        LDA #180
+        STA $D00D ; y coord 7th sprite
+        LDA #200
+        STA $D00F ; y coord 8th sprite
 
-; Sets the first sprite's location
-        ;LDA #100
-        ;STA $D000 ; x coord
-        ;STA $D001 ; y coord
 
 
-        LDA #1
+; Makes all sprites visible
+        LDA #255
         STA $D015
+
+
+; Change background
+        LDA #$00
+        STA $D021
 
 
 ; do not write code past this line

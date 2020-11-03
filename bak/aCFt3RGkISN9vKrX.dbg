@@ -13,25 +13,21 @@
             <LabelValue>2066</LabelValue>
         </Label>
         <Label>
-            <LabelText>loop_set_sprite_pointers</LabelText>
-            <LabelValue>2079</LabelValue>
+            <LabelText>loop_set_ants_color</LabelText>
+            <LabelValue>2085</LabelValue>
         </Label>
         <Label>
-            <LabelText>loop_set_sprite_colors</LabelText>
-            <LabelValue>2089</LabelValue>
-        </Label>
-        <Label>
-            <LabelText>loop_set_sprite_x_locations</LabelText>
-            <LabelValue>2101</LabelValue>
+            <LabelText>loop_set_ants_x_location</LabelText>
+            <LabelValue>2097</LabelValue>
         </Label>
         <Label>
             <LabelText>ANT_DATA</LabelText>
-            <LabelValue>2159</LabelValue>
+            <LabelValue>2126</LabelValue>
         </Label>
     </Labels>
     <DebuggerStartAddress>-1</DebuggerStartAddress>
     <WatchList />
     <Breakpoints />
     <LONGAITransitions />
-    <Binary>DggKAJ4gKDIwNjQpAAAAoj+9bwidgC7KEPepuqIHnfgHyhD6ogegCZidJ9DKiBD4og6pZJ0A0MrKEPmpPI0B0KlQjQPQqWSNBdCpeI0H0KmMjQnQqaCNC9CptI0N0KnIjQ/Qqf+NFdCpAI0h0GAAAAAAAAAAAAAAAAEAAGEAABEAAA4AAB8AAB8PH7UQoH8vz99f379f37q/36m/v8T6H6CSEpAhJIghJEghJEQA</Binary>
+    <Binary>DggKAJ4gKDIwNjQpAAAAoj+9TgidgC7KEPepuo34B435B6IHqQCdJ9DK0PiiDqlknQDQysoQ+alkjQDQjQHQjQLQqXiNA9CpA40V0GAAAAAAAAAAAAAAAAEAAGEAABEAAA4AAB8AAB8PH7UQoH8vz99f379f37q/36m/v8T6H6CSEpAhJIghJEghJEQA</Binary>
 </DebugInfo>

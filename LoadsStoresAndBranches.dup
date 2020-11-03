@@ -1,8 +1,9 @@
 ;labels
 al $0810 .PROGRAM_START
 al $0812 .loop_sprite_data
-al $0822 .loop_set_ants_color
-al $0830 .loop_set_ants_x_location
-al $083D .ANT_DATA
+al $081F .loop_set_sprite_pointers
+al $0829 .loop_set_sprite_colors
+al $0835 .loop_set_sprite_x_locations
+al $086F .ANT_DATA
 ;breakpoints
 

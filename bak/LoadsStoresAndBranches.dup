@@ -1,0 +1,8 @@
+;labels
+al $0810 .PROGRAM_START
+al $0812 .loop_sprite_data
+al $0825 .loop_set_ants_color
+al $0831 .loop_set_ants_x_location
+al $084E .ANT_DATA
+;breakpoints
+
